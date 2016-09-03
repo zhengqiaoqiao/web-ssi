@@ -1,0 +1,11 @@
+<!--#config timefmt="%Y%m%d%H%M%S"-->
+<!--#if expr="$SERVER_PORT = /80/" -->
+	<script src="http://<!--#echo var="SERVER_NAME"-->/templet/js/jquery-1.9.1.js?v=<!--#flastmod virtual="/templet/js/jquery-1.9.1.js"-->" type="text/javascript" charset="utf-8"></script>
+	<script src="http://<!--#echo var="SERVER_NAME"-->/templet/js/common.js?v=<!--#flastmod virtual="/templet/js/common.js"-->" type="text/javascript" charset="utf-8"></script>
+<!--#else -->
+	<script src="http://<!--#echo var="SERVER_NAME"-->:<!--#echo var="SERVER_PORT" -->/templet/js/jquery-1.9.1.js?v=<!--#flastmod virtual="/templet/js/jquery-1.9.1.js"-->" type="text/javascript" charset="utf-8"></script>
+	<script src="http://<!--#echo var="SERVER_NAME"-->:<!--#echo var="SERVER_PORT" -->/templet/js/common.js?v=<!--#flastmod virtual="/templet/js/common.js"-->" type="text/javascript" charset="utf-8"></script>
+<!--#endif -->
+
+
+

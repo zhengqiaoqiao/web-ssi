@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>web-ssi demo</title>
+	<!--#include virtual="/templet/shtml/meta.shtml" -->
+    <!--#include virtual="/templet/shtml/style.shtml" -->
+</head>
+<body>
+	
+	<div class="blue" style="height: 356px; width: 512px;border: 1px solid black; ">
+		<!--#printenv-->
+    </div>
+	<div class="red" style="height: 356px; width: 512px; border: 1px solid black; ">
+		hello world!
+		<!--#flastmod virtual="/templet/js/jquery-1.9.1.js"-->
+    </div>
+     
+	 <!--#include virtual="/templet/shtml/corejs.shtml" -->
+	 <script type="text/javascript">
+		ZQ_Common.say('郑乔乔 <!--#echo var="DATE_LOCAL" -->');
+	 </script>
+</body>
+</html>
